@@ -31,7 +31,7 @@ After you have installed dartxjs, include it in your Dart application like this:
 You can now send and receive messages in Dart like this:
 
 	DartToJSCommunicator comm = new DartToJSCommunicator();
-	comm.receiveMessage = (m) => print('Hello ${m["msg“}');
+	comm.receiveMessage = (m) => print('Hello ${m["msg“]}');
 	comm.sendMessage({"msg":"JavaScript"});
 
 And on the JavaScript side:
